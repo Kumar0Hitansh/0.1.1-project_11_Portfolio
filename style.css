@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+	scroll-behavior: smooth;
+	height: auto;
+	text-align: justify;
+	text-justify: auto;
+}
+
+nav {
+	background: radial-gradient(circle, black 10%, transparent 11%);
+	background-size: 1em 1em;
+	background-color: #2B3035;
+	opacity: 1;
+}
+
+
+#profileinfo a {
+	color: gray;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+/* -------------------profile name animation */
+.typing {
+	width: 203px;
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 2px solid #7e2ea0;
+	animation: typing 3s steps(12, end), cursor 0.2s steps(12, end) infinite;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes cursor {
+	50% {
+		border-color: transparent;
+	}
+}
+
+
+#designation-img {
+
+	transition: all;
+
+	animation: designation-img 1s 1;
+	cursor: pointer;
+
+}
+
+@keyframes designation-img {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+#designation-img:hover {
+
+	animation: designation-img 2s linear infinite;
+	cursor: pointer;
+
+}
+
+@keyframes designation-img {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+#pdfpdf{
+  width: 100%;
+  height: 450px;
+
+}
+footer {
+	background: radial-gradient(circle, black 10%, transparent 11%);
+	background-size: 1em 1em;
+	background-color: #2B3035;
+	opacity: 1;
+}
+#f4 {
+	font-size: 3em;
+	font-weight: bolder;
+	position: relative;
+}
+#f4>img {
+	position: relative;
+	right: -22px;
+	bottom: 29px;
+}
+#footer-bottom-img {
+	background-image: url(img/footer/wave.svg);
+}
